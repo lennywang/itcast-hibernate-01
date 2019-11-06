@@ -22,6 +22,7 @@ public class Demo {
         Transaction transaction = session.beginTransaction();
         Customer customer= new Customer();
         customer.setCust_name("Google 公司");
+        //customer.setCust_name("Google");
         session.save(customer);
         transaction.commit();
         sessionFactory.close();
